@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="description" content="Projekt za kolegij Internetska Platforma">
+    <meta name="keywords" content="HTML, CSS, projekt">
+    <meta name="author" content="Vilim Carević-Šimunić">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Internetska platforma - Projekt 24/25</title>
+</head>
+<body>
+    <header>
+        <div class="dinamo-image"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna stranica</a></li>
+			    <li><a href="novosti.html">Novosti</a></li>
+			    <li><a href="kontakt.html">Kontakt</a></li>
+			    <li><a href="onama.html">O nama</a></li>
+			    <li><a href="galerija.html">Galerija</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Kontakt forma</h1>
+        <div id="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4676.4595004429675!2d16.01809190703438!3d45.81847866830948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7b7f8858263%3A0x59c173543694d333!2sGNK%20Dinamo%20Zagreb!5e0!3m2!1sen!2shr!4v1737971240766!5m2!1sen!2shr" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="" id="contact_form" name="contact_form" method="POST">
+                <label for="fname">Ime *</label>
+                <input type="text" id="fname" name="firstname" placeholder="Ime.." required>
+
+                <label for="lname">Prezime *</label>
+                <input type="text" id="lname" name="lastname" placeholder="Prezime.." required>
+                
+                <label for="lname">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="E-mail.." required>
+
+                <label for="country">Država</label>
+                <select id="country" name="country">
+                <option value="">Molimo odaberite</option>
+                <option value="BE">Belgija</option>
+                <option value="HR" selected>Hrvatska</option>
+                <option value="LU">Luksemburg</option>
+                <option value="HU">Mađarska</option>
+                </select>
+
+                <label for="subject">Sadržaj</label>
+                <textarea id="subject" name="subject" placeholder="Napišite nešto.." style="height:200px"></textarea>
+
+                <input type="submit" value="Pošalji">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2025 Vilim Carević-Šimunić. <a href="https://github.com/VilimCS/Internetska-platforma"><img src="images/github-logo.png" title="Github" alt="Github"></a></p>
+    </footer>
+</body>
+</html>
